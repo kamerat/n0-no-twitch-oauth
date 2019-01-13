@@ -54,7 +54,7 @@ export default {
 		const token = document.location.hash.match(/\#(?:access_token)\=([\S\s]*?)\&/)
 		
 		if (token) {
-			this.oauthToken = document.location.hash.match(/\#(?:access_token)\=([\S\s]*?)\&/).pop();
+			this.oauthToken = "oauth:" + document.location.hash.match(/\#(?:access_token)\=([\S\s]*?)\&/).pop();
 			//Hide token from addressbar in case someone openes on stream
 			document.location.hash = "token-success"
 		}
