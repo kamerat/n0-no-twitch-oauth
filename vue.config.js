@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: ''
+  publicPath: '/n0-no-twitch-oauth/'
 }
